@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1
-      class="font-sans text-6xl font-light tracking-wider text-gray-600"
+      class="text-6xl tracking-wider text-gray-600 noto_sans_jp"
       v-bind:class="{ 'vertical-text': isPortrait }"
     >
       イズミラヴ
@@ -11,6 +11,13 @@
 
 <script>
 export default {
+  head () {
+    return {
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap' }
+      ]
+    }
+  },
   data: function () {
     return {
       isPortrait: true,   // 縦長(縦向き)
@@ -45,5 +52,9 @@ export default {
 .vertical-text {
   writing-mode: vertical-rl;
   text-orientation: upright;
+}
+
+.noto_sans_jp {
+  font-family: "Noto Sans JP", sans-serif;
 }
 </style>
