@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" v-if="isMounted">
     <h1
       class="font-sans text-6xl font-light tracking-wider text-gray-600"
       v-bind:class="{ 'vertical-text': isPortrait }"
@@ -15,12 +15,14 @@ export default {
     return {
       isPortrait: true,   // 縦長(縦向き)
       isLandscape: false, // 横長(横向き)
+      isMounted: false,
     }
   },
   mounted () {
     window.addEventListener('resize', this.resizeWindow, false);
     window.addEventListener('orientationchange', this.resizeWindow, false);
     this.resizeWindow();
+    this.isMounted = true
   },
   methods: {
     resizeWindow () {
