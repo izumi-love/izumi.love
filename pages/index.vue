@@ -11,6 +11,18 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'イズミラヴ',
+      link: [
+        {
+          rel: 'icon',
+          href: 'bxs-heart-fill.svg',
+          type: 'image/svg+xml',
+        },
+      ],
+    }
+  },
   data: function () {
     return {
       isPortrait: true,   // 縦長(縦向き)
