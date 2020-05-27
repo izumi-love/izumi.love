@@ -15,7 +15,12 @@ module.exports = {
       'nuxt.config.js'
     ]
   },
-  theme: {},
+  theme: {
+    fontSize: {
+      '6xl': '4rem',
+      '7xl': '5rem',
+    }
+  },
   variants: {},
   plugins: []
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="container" v-if="isMounted">
     <h1
-      class="font-sans text-6xl font-light tracking-wider text-gray-600"
+      class="font-sans text-6xl tracking-wider text-gray-600 md:text-7xl lg:font-bold"
       v-bind:class="{ 'vertical-text': isPortrait }"
     >
       イズミラヴ
@@ -14,6 +14,9 @@ export default {
   head () {
     return {
       title: 'イズミラヴ',
+      meta: [
+        { hid: 'description', name: 'description', content: '鹿児島県出水市に関するWebサイト' }
+      ],
       link: [
         {
           rel: 'icon',
