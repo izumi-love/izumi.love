@@ -40,6 +40,9 @@
 export default {
   head () {
     return {
+      htmlAttrs: {
+        lang: 'ja'
+      },
       title: 'イズミラヴ',
       meta: [
         { hid: 'description', name: 'description', content: '鹿児島県出水市に関するWebサイト' }
