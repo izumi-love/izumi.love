@@ -1,5 +1,6 @@
 <template>
   <div class="container" v-if="isMounted">
+    <debug-info v-bind:domain-production="site_domain" />
     <h1
       class="font-sans text-6xl tracking-wider text-gray-600 md:text-7xl lg:font-bold"
       v-bind:class="{ 'vertical-text': isPortrait }"
@@ -37,7 +38,12 @@
 </template>
 
 <script>
+import DebugInfo from '~/components/DebugInfo.vue'
+
 export default {
+  components: {
+    DebugInfo,
+  },
   head () {
     return {
       htmlAttrs: {
@@ -61,6 +67,7 @@ export default {
       isPortrait: true,   // 縦長(縦向き)
       isLandscape: false, // 横長(横向き)
       isMounted: false,
+      site_domain: 'izumi.love',
     }
   },
   mounted () {
