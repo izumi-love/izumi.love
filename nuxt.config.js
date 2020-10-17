@@ -40,7 +40,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/gtm',
   ],
+  gtm: {
+    id: 'GTM-54M8GF5',
+    pageTracking: true,
+    //enabled: true,
+  },
+
   /*
   ** Build configuration
   */
