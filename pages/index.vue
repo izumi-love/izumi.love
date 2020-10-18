@@ -48,12 +48,7 @@
 </template>
 
 <script>
-import DebugInfo from '~/components/DebugInfo.vue'
-
 export default {
-  components: {
-    DebugInfo,
-  },
   head () {
     return {
       htmlAttrs: {
