@@ -103,6 +103,6 @@ export default {
 }
 
 .hero-bg-img {
-  background-image: url(https://source.unsplash.com/user/erondu/720x480);
+  background-image: url(https://picsum.photos/800);
 }
 </style>
