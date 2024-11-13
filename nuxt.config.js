@@ -44,7 +44,7 @@ export default {
     '@nuxtjs/gtm',
   ],
   gtm: {
-    id: 'G-DP9LKR95Z5',
+    id: 'GTM-N4VNG8NB',
     pageTracking: true,
     //enabled: true,
   },
