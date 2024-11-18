@@ -56,7 +56,7 @@ export default {
       },
       title: 'イズミラヴ',
       meta: [
-        { hid: 'description', name: 'description', content: '鹿児島県出水市に関するWebサイト' }
+        { hid: 'description', name: 'description', content: 'AIを使った低価格(5万円〜)でエンジニアとWebデザイナーが作るWebサイト制作サービスです' }
       ],
       link: [
         {
